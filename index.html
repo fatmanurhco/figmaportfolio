@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="assets/img/logo.svg" alt="logo" />
+            <a href="#" class='btn'>Free Consultation</a>
+          </div>
+        <div class="hero">
+           <h1>Design solutions made easy</h1>
+           <p>With over ten years of experience in various design disciplines, 
+            I’m your one-stop shop for your design needs.</p>
+        </div>
+        <div class="blocks">
+          <div class="block single-block double-row-block">
+            <img src="assets/img/graphicdesign.png" alt="graphicdesign" />
+            <h4>Graphic Design</h4>
+          </div>
+          <div class="block bg-orange">
+          <img src="assets/img/uı.png" alt="uı" />
+            <h4>UI/UX</h4>
+          </div>
+          <div class="block bg-pink">
+          <img src="assets/img/apps.png" alt="apps" />
+            <h4>Apps</h4>
+          </div>
+          <div class="block single-block bg-red">
+          <img src="assets/img/illustrations.png" alt="illustrations" />
+            <h4>Illustrations</h4>
+          </div>
+          <div class="block single-block bg-cyan">
+          <img src="assets/img/photo.png" alt="photo" />
+            <h4>Photography</h4>
+          </div>
+          <div class="block single-block bg-purple">
+          <img src="assets/img/motion.png" alt="motions" />
+            <h4>Motion Graphics</h4>
+          </div>
+        </div>
+        <div class="about">
+          <img src="assets/img/bio.png" alt="bio" />
+          <span>
+          <h2>I’m Amy, and I’d love to work on your next project</h2>
+          <p>I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
+          <a href="#" class='btn red'>Free Consultation</a>
+         </span>
+        </div>
+        </div>
+        <div class="swiper work-slider">
+          <h2>My Work</h2>
+          <div class="swiper-wrapper work">
+              <div class="swiper-slide"><img src="assets/img/slider1.png" alt="slide1"></div>
+              <div class="swiper-slide"><img src="assets/img/slider2.png" alt="slide2"></div>
+              <div class="swiper-slide"> <img src="assets/img/slider3.jpg" alt="slide3"></div>
+              <div class="swiper-slide"><img src="assets/img/slider4.png" alt="slide4"></div>
+              <div class="swiper-slide"><img src="assets/img/slider5.png" alt="slide5"></div>  
+          </div>
+          <div class="swiper-pagination"></div> 
+
+      </div>
+
+      <div class="swiper-buttons left-to-right">
+          <a href="#"><img   class="swiper-button-prev-custom" src="assets/img/btn (2).png" alt="left"></a>
+          <a href="#"><img  class="swiper-button-next-custom" src="assets/img/btn (2).png" alt="right"></a>
+      </div>
+        <div class="container">
+        <div class="contact">
+          <h2>Book a call with me </h2>
+          <p>I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. 
+            Then we can move forward from there.</p>
+            <a href="#" class='btn red'>Free Consultation</a>
+        </div>
+        <div class="header">
+            <img src="assets/img/logo.svg" alt="logo" />
+            <a href="#" class='btn'>Free Consultation</a>
+          </div>
+       </div>
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+          slidesPerView: 'auto',
+          centeredSlides: true,
+          spaceBetween: 15,
+          initialSlide: 1, // hangi slide gosterilsin
+          navigation: {
+            nextEl: '.swiper-button-next-custom',
+            prevEl: '.swiper-button-prev-custom',
+          },
+          breakpoints: {
+            768: {
+              spaceBetween: 30,
+            }
+          },
+        });
+      </script>
+</body>
+
+</html>
